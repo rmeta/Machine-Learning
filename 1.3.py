@@ -10,7 +10,7 @@ import pandas as pd
 import seaborn as sn
 from statsmodels.tsa.stattools import adfuller
 df=pd.read_csv('F:/Master Course/Machin learning/home work/Brent Spot Price.csv')
-df['Month']=pd.to_datetime(df['Month'],errors='ignore') # Month نام ستون اول که بی اسم است را ماه گذاشتم
+df['Month']=pd.to_datetime(df['Month'],errors='ignore') # Month
 df.set_index('Month', inplace=True)
 df_stationary=df.diff().dropna()
 df_stationary.plot()
