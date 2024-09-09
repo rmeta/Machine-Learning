@@ -47,3 +47,8 @@
 <h1>HW6: Neural Network Training and Optimization Techniques</h1>
 
 <p>The Fashion MNIST dataset, consisting of 60,000 training and 10,000 test images, was normalized and used to train a Sequential neural network with 128 neurons in the first dense layer and 10 output neurons using <code>softmax</code>. Optimizers such as Adam and SGD were applied, with Adam achieving 90.66% accuracy after 10 epochs. Additional layers and dropout (0.3 probability) were added to prevent overfitting. Callbacks like <code>LearningRateScheduler</code>, <code>EarlyStopping</code>, and <code>ReduceLROnPlateau</code> were used to dynamically adjust learning rates and stop training when improvements halted. Finally, the <code>ModelCheckpoint</code> callback ensured the model was saved after each epoch with validation improvements, preserving training progress.</p>
+
+<h1>UBC ML Course Project: COVID-19 Patient Intubation Prediction</h1>
+
+<p>This project focuses on developing machine learning models to predict the need for intubation in COVID-19 patients using clinical data. The dataset, sourced from Kaggle, contains over a million entries with 21 features. Models such as Logistic Regression, K-Nearest Neighbors (KNN), and Artificial Neural Networks (ANN) were implemented to perform binary classification, with PCA used for dimensionality reduction. The Logistic Regression model with Binary Cross-Entropy cost function achieved the highest accuracy (96.85%). KNN also performed well after PCA but required more computational resources. Logistic Regression was deemed the best model due to its high accuracy and computational efficiency.</p>
+
