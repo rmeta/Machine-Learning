@@ -15,3 +15,11 @@
 
 <h1>HW3: Decision Tree Classification and Pruning</h1>
 <p>The Adult dataset is divided into ten subsets of 3,256 unique records. Datasets df1 to df9 are used for training, and df10 for evaluation. After encoding categorical features, decision trees are trained, and metrics such as accuracy, recall, F1-score, and confusion matrix are calculated. Post-pruning is applied to select the optimal alpha, minimizing overfitting by balancing training and test performance.</p>
+
+<h1>HW4: Bayesian Classification and Dimensionality Reduction</h1>
+
+<h2>Part 1</h2>
+<p>Implement a Bayesian classifier using Gaussian distributions on the Breast_cancer dataset, achieving about 90% accuracy. The dataset includes 6 attributes and no missing values, with 'diagnosis' as the target variable. Feature independence is checked through scatter plots, and Gaussian distributions are calculated for each predictor.</p>
+
+<h2>Part 2</h2>
+<p>Apply PCA to reduce the dataset's dimensions from 5 to 3, capturing 99.5% of the variance. The reduced dataset is then used in the Bayesian classifier, improving accuracy to 98% compared to the original dataset.</p>
