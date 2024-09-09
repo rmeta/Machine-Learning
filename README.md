@@ -23,3 +23,23 @@
 
 <h2>Part 2</h2>
 <p>Apply PCA to reduce the dataset's dimensions from 5 to 3, capturing 99.5% of the variance. The reduced dataset is then used in the Bayesian classifier, improving accuracy to 98% compared to the original dataset.</p>
+
+<h1>HW5: Neural Networks and Sequential Models</h1>
+
+<h2>Question 2: Sequential Model with Dense Layers</h2>
+<p>The breast_cancer dataset is loaded and split into training and testing sets. A Sequential model with dense layers using the <code>Relu</code> activation function is built. The model is compiled with the <code>adamax</code> optimizer, and training is conducted with a learning rate scheduler and early stopping to avoid overfitting.</p>
+
+<h2>Question 3: RNN with Embeddings</h2>
+<p>The IMDB dataset is preprocessed, transforming text data into embeddings. A recurrent neural network (RNN) with LSTM layers is implemented, using an embedding layer to map words to vector space. Early stopping and checkpoints are used for optimal training.</p>
+
+<h2>Question 4: GRU Model</h2>
+<p>A GRU (Gated Recurrent Unit) model is employed for classification, similar to the LSTM model in question 3. The GRU model shows improved performance over LSTM with a higher accuracy and less overfitting.</p>
+
+<h2>Question 5: LSTM Model</h2>
+<p>An LSTM model is used to classify the data, showing slightly better training accuracy than the GRU model but with signs of overfitting in the test set, leading to lower test accuracy.</p>
+
+<h2>Question 6: Bidirectional LSTM</h2>
+<p>A bidirectional LSTM is implemented to capture context from both directions of the input sequences. This model achieves higher accuracy by considering both past and future information simultaneously.</p>
+
+<h2>Question 7: Complex Model with Multiple Outputs</h2>
+<p>A complex neural network model with multiple output layers is built using the <code>functional</code> API in Keras. Despite its complexity, the model experiences overfitting and underperforms compared to simpler architectures like the bidirectional LSTM or GRU.</p>
