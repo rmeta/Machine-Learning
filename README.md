@@ -39,12 +39,11 @@
 <p>An LSTM model is used to classify the data, showing slightly better training accuracy than the GRU model but with signs of overfitting in the test set, leading to lower test accuracy.</p>
 
 <h2>Question 6: Bidirectional LSTM</h2>
-
-<h1>HW6: Neural Network Training and Optimization Techniques</h1>
-
-<p>The Fashion MNIST dataset, consisting of 60,000 training and 10,000 test images, was normalized and used to train a Sequential neural network with 128 neurons in the first dense layer and 10 output neurons using <code>softmax</code>. Optimizers such as Adam and SGD were applied, with Adam achieving 90.66% accuracy after 10 epochs. Additional layers and dropout (0.3 probability) were added to prevent overfitting. Callbacks like <code>LearningRateScheduler</code>, <code>EarlyStopping</code>, and <code>ReduceLROnPlateau</code> were used to dynamically adjust learning rates and stop training when improvements halted. Finally, the <code>ModelCheckpoint</code> callback ensured the model was saved after each epoch with validation improvements, preserving training progress.</p>
-
 <p>A bidirectional LSTM is implemented to capture context from both directions of the input sequences. This model achieves higher accuracy by considering both past and future information simultaneously.</p>
 
 <h2>Question 7: Complex Model with Multiple Outputs</h2>
 <p>A complex neural network model with multiple output layers is built using the <code>functional</code> API in Keras. Despite its complexity, the model experiences overfitting and underperforms compared to simpler architectures like the bidirectional LSTM or GRU.</p>
+
+<h1>HW6: Neural Network Training and Optimization Techniques</h1>
+
+<p>The Fashion MNIST dataset, consisting of 60,000 training and 10,000 test images, was normalized and used to train a Sequential neural network with 128 neurons in the first dense layer and 10 output neurons using <code>softmax</code>. Optimizers such as Adam and SGD were applied, with Adam achieving 90.66% accuracy after 10 epochs. Additional layers and dropout (0.3 probability) were added to prevent overfitting. Callbacks like <code>LearningRateScheduler</code>, <code>EarlyStopping</code>, and <code>ReduceLROnPlateau</code> were used to dynamically adjust learning rates and stop training when improvements halted. Finally, the <code>ModelCheckpoint</code> callback ensured the model was saved after each epoch with validation improvements, preserving training progress.</p>
